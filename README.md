@@ -6,7 +6,7 @@ This project demonstrates a simple integration between **Node.js** and **Redis**
 
 - [Node.js](https://nodejs.org/)
 - [Redis](https://redis.io/)
-- [redis (npm)](https://www.npmjs.com/package/redis)
+- [Postgress](https://www.postgresql.org/)
 
 ## 📦 Installation
 
@@ -39,17 +39,9 @@ Deleting data
 
 Using lists, hashes, or pub/sub (if applicable)
 
-🛠 Project Structure
-
-```bash
-node-redis/
-├── index.js          # Main script
-├── package.json      # Project dependencies
-└── README.md         # This file
-```
 
 🧠 Prerequisites
-Node.js 14+
+Node.js 18+
 
 Redis installed locally or via Docker
 
