@@ -30,16 +30,6 @@ Run the main script to test Redis operations:
 node index.js
 ```
 
-Example Features (adjust based on actual implementation):
-Connecting to Redis
-
-Setting and getting keys/values
-
-Deleting data
-
-Using lists, hashes, or pub/sub (if applicable)
-
-
 🧠 Prerequisites
 Node.js 18+
 
@@ -51,6 +41,3 @@ If you prefer to run Redis using Docker:
 ```bash
 docker run --name redis -p 6379:6379 -d redis
 ```
-
-✨ Contributing
-Pull requests are welcome! For major changes, please open an issue first to discuss what you would like to change.
