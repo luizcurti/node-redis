@@ -1,0 +1,92 @@
+{
+    "info": {
+      "name": "Node Redis API",
+      "description": "Collection of endpoints for the Node.js app with Redis",
+      "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+      {
+        "name": "Create User",
+        "request": {
+          "method": "POST",
+          "header": [],
+          "body": {
+            "mode": "raw",
+            "raw": "{\"username\": \"newuser\", \"email\": \"newuser@example.com\", \"password\": \"securepassword\"}",
+            "options": {
+              "raw": {
+                "language": "json"
+              }
+            }
+          },
+          "url": {
+            "raw": "http://localhost:3000/users",
+            "protocol": "http",
+            "host": [
+              "localhost"
+            ],
+            "port": "3000",
+            "path": [
+              "users"
+            ]
+          }
+        },
+        "response": []
+      },
+      {
+        "name": "Login User",
+        "request": {
+          "method": "POST",
+          "header": [],
+          "body": {
+            "mode": "raw",
+            "raw": "{\"email\": \"newuser@example.com\", \"password\": \"securepassword\"}",
+            "options": {
+              "raw": {
+                "language": "json"
+              }
+            }
+          },
+          "url": {
+            "raw": "http://localhost:3000/login",
+            "protocol": "http",
+            "host": [
+              "localhost"
+            ],
+            "port": "3000",
+            "path": [
+              "login"
+            ]
+          }
+        },
+        "response": []
+      },
+      {
+        "name": "Get User Profile",
+        "request": {
+          "method": "GET",
+          "header": [
+            {
+              "key": "Authorization",
+              "value": "Bearer {{token}}",
+              "description": "JWT token obtained after login"
+            }
+          ],
+          "url": {
+            "raw": "http://localhost:3000/users/profile",
+            "protocol": "http",
+            "host": [
+              "localhost"
+            ],
+            "port": "3000",
+            "path": [
+              "users",
+              "profile"
+            ]
+          }
+        },
+        "response": []
+      }
+    ]
+  }
+  

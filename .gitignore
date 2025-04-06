@@ -1,2 +1,5 @@
 .env
 node_modules
+.qodo
+yarn.lock
+package-lock.json

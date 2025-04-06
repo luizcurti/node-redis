@@ -38,7 +38,6 @@ export class LoginUserController {
       subject: user.id,
     });
 
-    // user-${idUser}
     await setRedis(`user-${user.id}`, JSON.stringify(user));
 
     return response.json(token);
